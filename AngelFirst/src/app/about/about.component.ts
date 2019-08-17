@@ -6,5 +6,5 @@
 })
 
 export class AboutComponent {
-    Message = 'This application is created to add tasks and amnage them based on its schedules.'
+    Message = 'This application is created to add tasks and amnage them based on its schedules. Check this space'
 }
