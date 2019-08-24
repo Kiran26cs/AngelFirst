@@ -2,22 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import { AppComponent } from './app.component';
+import {AppRouterModule} from './app-router.module'
+import {AppComponent} from './app.component'
 import { HomeComponent } from './Home/home.component';
 import { AboutComponent } from './about/about.component';
 
-const appRoutes: Routes = [{ path: 'home', component: HomeComponent },
-                           { path: 'about', component: AboutComponent }]
 
 @NgModule({
-  declarations: [
-      AppComponent, HomeComponent, AboutComponent
-  ],
   imports: [
       BrowserModule,
-      RouterModule.forRoot(appRoutes, {enableTracing:true})
-  ],
-  providers: [],
+      AppRouterModule
+    ],
+  declarations: [AppComponent, HomeComponent, AboutComponent],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
