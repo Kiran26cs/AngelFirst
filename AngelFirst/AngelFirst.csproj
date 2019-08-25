@@ -105,6 +105,8 @@
     <Content Include="src\app\about\about.component.html" />
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\Home\home.component.html" />
+    <Content Include="src\app\page-not-found\page-not-found.component.css" />
+    <Content Include="src\app\page-not-found\page-not-found.component.html" />
     <Content Include="src\app\profile-management\profile-management.component.css" />
     <Content Include="src\app\profile-management\profile-management.component.html" />
     <Content Include="src\tsconfig.app.json" />
@@ -141,10 +143,13 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\Home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\page-not-found\page-not-found.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\page-not-found\page-not-found.component.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile-management.component.spec.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile-management.component.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile-router.module.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile.module.ts" />
+    <TypeScriptCompile Include="src\app\security\router-security.service.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />
