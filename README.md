@@ -4,3 +4,5 @@ The project mainly focus at the major technical implementation essential to crea
 So far implemented
 1. Routing
 2. Lazy loading
+3. Page not found routing
+4. Route Guarding - CanActivate guard.
