@@ -4,7 +4,7 @@ import {ProfileRouterModule} from './profile-router.module'
 import {ProfileManagementComponent} from './profile-management.component'
 @NgModule({
   imports: [
-      CommonModule, ProfileRouterModule
+     CommonModule, ProfileRouterModule
     ],
   declarations: [ProfileManagementComponent]
 })
