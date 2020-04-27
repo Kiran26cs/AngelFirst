@@ -1,0 +1,37 @@
+<p>
+  Employee details
+</p>
+<div *ngIf="errorMessage!==''"> {{errorMessage}}</div> {{employeesExists}}
+<div *ngIf="employeesExists">
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Emp Id</th>
+        <th>Emp Name</th>
+        <th>Emp Salary</th>
+        <th>Emp Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.employee_name}}</td>
+        <td>{{employee.employee_salary}}</td>
+        <td>{{employee.employee_age}}</td>
+        <td><a routerLink="/employees/{{employee.id}}">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{employeeExists}}
+<div *ngIf="employeeExists">
+  <ul style="list-style-type:none;">
+    <li>Employee ID: {{employeeDetail.id}}</li>
+    <li>Name: {{employeeDetail.employee_name}}</li>
+    <li>Salary: {{employeeDetail.employee_salary}}</li>
+    <li>Age: {{employeeDetail.employee_age}}</li>
+  </ul>
+</div>
+
