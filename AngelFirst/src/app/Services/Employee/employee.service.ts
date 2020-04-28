@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { IEmployee } from '../../Model/IEmployee';
 import { IEmployeeServiceResponse } from '../../Model/IEmployeeServiceResponse';
@@ -22,12 +22,7 @@ export class EmployeeService {
       .catch(this.handleCatchErrors);
   }
 
-  getEmployeeByID(id: number): Observable<IEmployee> {
-    return this._http.get<IEmployeeSingleResponse>(this.employeeAPIUrl + "/" + id.toString())
-      .map(x => x.data)
-      .catch(this.handleCatchErrors);
-  }
-
+  
   handleCatchErrors(error: HttpErrorResponse) {
     return Observable.throw(error.message);
   }

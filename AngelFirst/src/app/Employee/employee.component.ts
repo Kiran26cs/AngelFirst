@@ -28,8 +28,6 @@ export class EmployeeComponent implements OnInit {
       this.getEmployeeByID();
       this.employeeExists = (this.employeeDetail !== undefined || this.employeeDetail !== null) && this.errorMessage === '';
     }
-    
-    
   }
 
   
@@ -40,9 +38,10 @@ export class EmployeeComponent implements OnInit {
       error => this.errorMessage = error);
   }
 
+  
   getEmployeeByID() {
-    return this._employeeService.getEmployeeByID(this.id)
-      .subscribe(x => this.employeeDetail = x,
-        error => this.errorMessage = error);
+    this.getAllEmployees();
+    this.employeeDetail = this.employees.filter(x => x.id === this.id.toString())[0];
+    this.employees = null;
   }
 }
