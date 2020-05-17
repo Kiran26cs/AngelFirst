@@ -105,6 +105,13 @@
     <Content Include="protractor.conf.js" />
     <Content Include="src\app\about\about.component.html" />
     <Content Include="src\app\app.component.css" />
+    <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.css" />
+    <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.html" />
+    <Content Include="src\app\CustomComponents\table\dist\index.html" />
+    <Content Include="src\app\CustomTableDisplay\Customer\customers\customers.component.css" />
+    <Content Include="src\app\CustomTableDisplay\Customer\customers\customers.component.html" />
+    <Content Include="src\app\Employee\employee.component.css" />
+    <Content Include="src\app\Employee\employee.component.html" />
     <Content Include="src\app\Home\home.component.html" />
     <Content Include="src\app\page-not-found\page-not-found.component.css" />
     <Content Include="src\app\page-not-found\page-not-found.component.html" />
@@ -143,7 +150,20 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\table\basic-table\basic-table.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\table\basic-table\basic-table.component.ts" />
+    <TypeScriptCompile Include="src\app\CustomDirective\table\basic-table-style.directive.spec.ts" />
+    <TypeScriptCompile Include="src\app\CustomDirective\table\basic-table-style.directive.ts" />
+    <TypeScriptCompile Include="src\app\CustomTableDisplay\Customer\customers\customers.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\CustomTableDisplay\Customer\customers\customers.component.ts" />
+    <TypeScriptCompile Include="src\app\Employee\employee.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\Employee\employee.component.ts" />
     <TypeScriptCompile Include="src\app\Home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\Model\IEmployee.ts" />
+    <TypeScriptCompile Include="src\app\Model\IEmployeeServiceResponse.ts" />
+    <TypeScriptCompile Include="src\app\Model\Table\Element.ts" />
+    <TypeScriptCompile Include="src\app\Model\Table\Row.ts" />
+    <TypeScriptCompile Include="src\app\Model\Table\Table.ts" />
     <TypeScriptCompile Include="src\app\page-not-found\page-not-found.component.spec.ts" />
     <TypeScriptCompile Include="src\app\page-not-found\page-not-found.component.ts" />
     <TypeScriptCompile Include="src\app\profile-management\Model\profile.ts" />
@@ -152,6 +172,8 @@
     <TypeScriptCompile Include="src\app\profile-management\profile-router.module.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile.module.ts" />
     <TypeScriptCompile Include="src\app\security\router-security.service.ts" />
+    <TypeScriptCompile Include="src\app\Services\Employee\employee.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\Services\Employee\employee.service.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />
@@ -161,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\CustomDirective\table\app\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
