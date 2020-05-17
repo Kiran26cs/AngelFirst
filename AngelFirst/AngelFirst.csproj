@@ -108,6 +108,8 @@
     <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.css" />
     <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.html" />
     <Content Include="src\app\CustomComponents\table\dist\index.html" />
+    <Content Include="src\app\Customer\manage-customers\manage-customers.component.css" />
+    <Content Include="src\app\Customer\manage-customers\manage-customers.component.html" />
     <Content Include="src\app\CustomTableDisplay\Customer\customers\customers.component.css" />
     <Content Include="src\app\CustomTableDisplay\Customer\customers\customers.component.html" />
     <Content Include="src\app\Employee\employee.component.css" />
@@ -154,11 +156,14 @@
     <TypeScriptCompile Include="src\app\CustomComponents\table\basic-table\basic-table.component.ts" />
     <TypeScriptCompile Include="src\app\CustomDirective\table\basic-table-style.directive.spec.ts" />
     <TypeScriptCompile Include="src\app\CustomDirective\table\basic-table-style.directive.ts" />
+    <TypeScriptCompile Include="src\app\Customer\manage-customers\manage-customers.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\Customer\manage-customers\manage-customers.component.ts" />
     <TypeScriptCompile Include="src\app\CustomTableDisplay\Customer\customers\customers.component.spec.ts" />
     <TypeScriptCompile Include="src\app\CustomTableDisplay\Customer\customers\customers.component.ts" />
     <TypeScriptCompile Include="src\app\Employee\employee.component.spec.ts" />
     <TypeScriptCompile Include="src\app\Employee\employee.component.ts" />
     <TypeScriptCompile Include="src\app\Home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\Model\CustomerDetail.ts" />
     <TypeScriptCompile Include="src\app\Model\IEmployee.ts" />
     <TypeScriptCompile Include="src\app\Model\IEmployeeServiceResponse.ts" />
     <TypeScriptCompile Include="src\app\Model\Table\Element.ts" />

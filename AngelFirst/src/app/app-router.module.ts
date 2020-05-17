@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {RouterSecurityService} from './security/router-security.service'
 import { EmployeeComponent } from './Employee/employee.component';
 import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component';
+import { ManageCustomersComponent } from './Customer/manage-customers/manage-customers.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     { path: 'employees', component: EmployeeComponent },
     { path: 'employees/:id', component: EmployeeComponent },
     { path: 'customers', component: CustomersComponent },
+    { path: 'customersedit', component: ManageCustomersComponent },
     { path: 'profile', loadChildren: './profile-management/profile.module#ProfileModule' },
     { path: '**', component: PageNotFoundComponent }
 ];

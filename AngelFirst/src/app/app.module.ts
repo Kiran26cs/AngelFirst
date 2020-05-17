@@ -13,15 +13,19 @@ import { EmployeeService } from '../app/Services/Employee/employee.service'
 import { HttpClientModule } from '@angular/common/http';
 import { BasicTableStyleDirective } from './CustomDirective/table/basic-table-style.directive';
 import { BasicTableComponent } from './CustomComponents/table/basic-table/basic-table.component';
-import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component'
+import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component';
+import { ManageCustomersComponent } from './Customer/manage-customers/manage-customers.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
       BrowserModule,
     AppRouterModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     ],
-  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent],
   providers: [RouterSecurityService, EmployeeService],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,14 @@
+<h2>Manage customer details</h2>
+
+<form class="row" [formGroup]="customerFormBuilder" (ngSubmit)="onCustomerFormSubmit(customerFormBuilder)">
+  <label *ngIf="customerFormBuilder.controls['firstName'].hasError('required') && (customerFormBuilder.controls['firstName'].touched || submitted)">Given name is mandatory</label>
+  <input name="firstName" formControlName="firstName" class="form-control" id="firstName" placeholder="Enter the Given name" />
+
+  <label *ngIf="customerFormBuilder.controls['lastName'].hasError('required') && (customerFormBuilder.controls['lastName'].touched || submitted)">Surname is mandatory</label>
+  <input name="lastName" formControlName="lastName" class="form-control" id="lastName" placeholder="Enter the Surname" />
+
+  <label *ngIf="customerFormBuilder.controls['emailAddress'].hasError('required') && (customerFormBuilder.controls['emailAddress'].touched || submitted)">Email address is mandatory</label>
+  <input name="emailAddress" formControlName="emailAddress" class="form-control" id="emailAddress" placeholder="Enter the email address" />
+
+  <button type="submit">Save</button>
+</form>
