@@ -1,0 +1,18 @@
+
+  <div *ngIf="dataExists">
+    <table appBasicTableStyle #exportView="exportBasicTableStyle">
+      <thead>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of dataSourceObj.TableRows">
+          <td *ngFor="let ele of row.cells">
+            {{ele.value}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div *ngIf="!dataExists">
+  No data found
+</div>
+  

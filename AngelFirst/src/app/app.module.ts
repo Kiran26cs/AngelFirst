@@ -10,7 +10,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RouterSecurityService } from './security/router-security.service';
 import { EmployeeComponent } from '../app/Employee/employee.component'
 import { EmployeeService } from '../app/Services/Employee/employee.service'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { BasicTableStyleDirective } from './CustomDirective/table/basic-table-style.directive';
+import { BasicTableComponent } from './CustomComponents/table/basic-table/basic-table.component';
+import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component'
 
 @NgModule({
   imports: [
@@ -18,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http'
     AppRouterModule,
     HttpClientModule
     ],
-  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent],
   providers: [RouterSecurityService, EmployeeService],
   bootstrap: [AppComponent]
 })

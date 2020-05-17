@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {RouterSecurityService} from './security/router-security.service'
 import { EmployeeComponent } from './Employee/employee.component';
+import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'employees', component: EmployeeComponent },
     { path: 'employees/:id', component: EmployeeComponent },
+    { path: 'customers', component: CustomersComponent },
     { path: 'profile', loadChildren: './profile-management/profile.module#ProfileModule' },
     { path: '**', component: PageNotFoundComponent }
 ];
