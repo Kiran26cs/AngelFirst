@@ -1,19 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to the {{appName}}!
-  </h1> 
-  <nav style="background-color:lightgreen">
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/home/1" routerLinkActive="active">Home-1-user</a>
-    <a routerLink="/home/2" routerLinkActive="active">Admin Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/profile" routerLinkActive="active">Profile</a>
-    <a routerLink="/employees" routerLinkActive="active">Employees</a>
-    <a routerLink="/customers" routerLinkActive="active">Customers</a>
-  </nav>
-
-    
+<div style="width:75%; margin:auto;">
+  <div class="headerContentstyle">
+    <h1>
+      Welcome to the {{appName}}!
+    </h1>
+    <app-home-navigation></app-home-navigation>
+  </div>
+  <div class="bodyContentstyle">
+    <router-outlet></router-outlet>
+  </div>
+  
 </div>
-<router-outlet></router-outlet>
-

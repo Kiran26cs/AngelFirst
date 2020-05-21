@@ -16,6 +16,7 @@ import { BasicTableComponent } from './CustomComponents/table/basic-table/basic-
 import { CustomersComponent } from './CustomTableDisplay/Customer/customers/customers.component';
 import { ManageCustomersComponent } from './Customer/manage-customers/manage-customers.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeNavigationComponent } from '../app/CustomComponents/home-navigation/home-navigation.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
     ],
-  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent, HomeNavigationComponent],
   providers: [RouterSecurityService, EmployeeService],
   bootstrap: [AppComponent]
 })
