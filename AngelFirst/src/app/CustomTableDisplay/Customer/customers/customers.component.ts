@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Table } from '../../../Model/Table/Table';
 import { Row } from '../../../Model/Table/Row';
 import { Element } from '../../../Model/Table/Element';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-customers',
@@ -9,14 +10,21 @@ import { Element } from '../../../Model/Table/Element';
   styleUrls: ['./customers.component.css']
 })
 export class CustomersComponent implements OnInit {
-
+  idValue: string = ""
   datatable: Table = new Table()
   dataRows: Array<Row> = []
-   
-  constructor() { }
+  customerTableName: string = "List of Customers"
+
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.CreateTable();
+    this.idValue = this._route.snapshot.paramMap.get('id')
+    if (this.idValue == null) {
+      this.CreateTable();
+    } else {
+      this.datatable = null;
+    }
+    
   }
 
   CreateRows() {

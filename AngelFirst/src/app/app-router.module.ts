@@ -19,6 +19,7 @@ const appRoutes: Routes = [
     { path: 'employees', component: EmployeeComponent },
     { path: 'employees/:id', component: EmployeeComponent },
     { path: 'customers', component: CustomersComponent },
+    { path: 'customers/:id', component: CustomersComponent },
     { path: 'customersedit', component: ManageCustomersComponent },
     { path: 'profile', loadChildren: './profile-management/profile.module#ProfileModule' },
     { path: '**', component: PageNotFoundComponent }

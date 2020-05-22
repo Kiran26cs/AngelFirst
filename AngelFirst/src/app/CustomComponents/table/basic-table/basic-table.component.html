@@ -1,5 +1,8 @@
 
-  <div *ngIf="dataExists">
+<div style="height:10%; background-color:darkcyan; color:white">
+  {{TableName}}
+</div>
+<div *ngIf="dataExists">
     <table appBasicTableStyle #exportView="exportBasicTableStyle">
       <thead>
       </thead>
@@ -13,6 +16,6 @@
     </table>
   </div>
 <div *ngIf="!dataExists">
-  No data found
+  No data found to display
 </div>
   

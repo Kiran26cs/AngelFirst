@@ -10,6 +10,7 @@ import { BasicTableStyleDirective } from '../../../CustomDirective/table/basic-t
 export class BasicTableComponent implements OnInit {
   dataExists: boolean
   @Input('dataSourceObj') dataSourceObj: Table
+  @Input('TableName') TableName: string
   constructor() { }
 
   ngOnInit() {
