@@ -17,6 +17,7 @@ import { CustomersComponent } from './CustomTableDisplay/Customer/customers/cust
 import { ManageCustomersComponent } from './Customer/manage-customers/manage-customers.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeNavigationComponent } from '../app/CustomComponents/home-navigation/home-navigation.component';
+import { AppFooterComponent } from '../app/CustomComponents/app-footer/app-footer.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { HomeNavigationComponent } from '../app/CustomComponents/home-navigation
     FormsModule,
     ReactiveFormsModule
     ],
-  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent, HomeNavigationComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent, HomeNavigationComponent, AppFooterComponent],
   providers: [RouterSecurityService, EmployeeService],
   bootstrap: [AppComponent]
 })
