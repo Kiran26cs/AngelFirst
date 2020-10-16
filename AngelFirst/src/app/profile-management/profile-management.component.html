@@ -4,10 +4,7 @@
 
 <div *ngIf="profiles!=undefined">
   <ul style="list-style-type:none;" *ngFor="let profItem of profiles">
-    <li>profile ID: {{profItem.profileID}}</li>
-    <li>Name: {{profItem.Name}}</li>
-    <li>Address: {{profItem.Address}}</li>
-    <li><a routerLink="./edit/{{profItem.profileID}}">Edit profile</a></li>
+    <app-profile-display [inpprofileItem]="profItem"></app-profile-display>
   </ul>
 </div>
 

@@ -34,7 +34,8 @@ export class ProfileManagementComponent implements OnInit {
   }
 
   getProfileByID(Id: number) {
-    this.profileInfo = this.profiles.find(x => x.profileID == Id)
+      this.getListOfProfiles()
+      this.profileInfo = this.profiles.filter(x => x.profileID == Id)[0]
   }
   
 }

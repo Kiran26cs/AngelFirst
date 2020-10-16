@@ -1,0 +1,18 @@
+<b>PROFILE ID: </b> {{inpprofileItem.profileID}}
+<b>NAME: </b>{{inpprofileItem.Name}}
+<b>ADDRESS: </b>{{inpprofileItem.Address}}
+<button (click)="EditProfile(inpprofileItem.profileID)">Edit</button>
+
+<div *ngIf="profileInfo!=null">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" [(ngModel)]="profileInfo.Name" /></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" [(ngModel)]="profileInfo.Address" /></td>
+        </tr>
+    </table>
+    
+</div>

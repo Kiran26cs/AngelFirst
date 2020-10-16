@@ -119,6 +119,8 @@
     <Content Include="src\app\page-not-found\page-not-found.component.html" />
     <Content Include="src\app\profile-management\profile-management.component.css" />
     <Content Include="src\app\profile-management\profile-management.component.html" />
+    <Content Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.css" />
+    <Content Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.html" />
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.spec.json" />
     <Content Include="package.json" />
@@ -176,6 +178,8 @@
     <TypeScriptCompile Include="src\app\profile-management\profile-management.component.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile-router.module.ts" />
     <TypeScriptCompile Include="src\app\profile-management\profile.module.ts" />
+    <TypeScriptCompile Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.ts" />
     <TypeScriptCompile Include="src\app\security\router-security.service.ts" />
     <TypeScriptCompile Include="src\app\Services\Employee\employee.service.spec.ts" />
     <TypeScriptCompile Include="src\app\Services\Employee\employee.service.ts" />
