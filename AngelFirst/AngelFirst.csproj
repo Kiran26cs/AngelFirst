@@ -105,6 +105,10 @@
     <Content Include="protractor.conf.js" />
     <Content Include="src\app\about\about.component.html" />
     <Content Include="src\app\app.component.css" />
+    <Content Include="src\app\CustomComponents\app-footer\app-footer.component.css" />
+    <Content Include="src\app\CustomComponents\app-footer\app-footer.component.html" />
+    <Content Include="src\app\CustomComponents\home-navigation\home-navigation.component.css" />
+    <Content Include="src\app\CustomComponents\home-navigation\home-navigation.component.html" />
     <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.css" />
     <Content Include="src\app\CustomComponents\table\basic-table\basic-table.component.html" />
     <Content Include="src\app\CustomComponents\table\dist\index.html" />
@@ -121,6 +125,8 @@
     <Content Include="src\app\profile-management\profile-management.component.html" />
     <Content Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.css" />
     <Content Include="src\app\profile-management\usercontrol\profile-display\profile-display.component.html" />
+    <Content Include="src\app\sidebar-navigator\sidebar-navigator.component.css" />
+    <Content Include="src\app\sidebar-navigator\sidebar-navigator.component.html" />
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.spec.json" />
     <Content Include="package.json" />
@@ -154,6 +160,10 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\app-footer\app-footer.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\app-footer\app-footer.component.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\home-navigation\home-navigation.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\CustomComponents\home-navigation\home-navigation.component.ts" />
     <TypeScriptCompile Include="src\app\CustomComponents\table\basic-table\basic-table.component.spec.ts" />
     <TypeScriptCompile Include="src\app\CustomComponents\table\basic-table\basic-table.component.ts" />
     <TypeScriptCompile Include="src\app\CustomDirective\table\basic-table-style.directive.spec.ts" />
@@ -183,6 +193,8 @@
     <TypeScriptCompile Include="src\app\security\router-security.service.ts" />
     <TypeScriptCompile Include="src\app\Services\Employee\employee.service.spec.ts" />
     <TypeScriptCompile Include="src\app\Services\Employee\employee.service.ts" />
+    <TypeScriptCompile Include="src\app\sidebar-navigator\sidebar-navigator.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\sidebar-navigator\sidebar-navigator.component.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />

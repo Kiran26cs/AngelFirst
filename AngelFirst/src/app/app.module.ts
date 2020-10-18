@@ -18,6 +18,7 @@ import { ManageCustomersComponent } from './Customer/manage-customers/manage-cus
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeNavigationComponent } from '../app/CustomComponents/home-navigation/home-navigation.component';
 import { AppFooterComponent } from '../app/CustomComponents/app-footer/app-footer.component';
+import { SidebarNavigatorComponent } from './sidebar-navigator/sidebar-navigator.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { AppFooterComponent } from '../app/CustomComponents/app-footer/app-foote
     FormsModule,
     ReactiveFormsModule
     ],
-  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent, HomeNavigationComponent, AppFooterComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, PageNotFoundComponent, EmployeeComponent, BasicTableStyleDirective, BasicTableComponent, CustomersComponent, ManageCustomersComponent, HomeNavigationComponent, AppFooterComponent, SidebarNavigatorComponent],
   providers: [RouterSecurityService, EmployeeService],
   bootstrap: [AppComponent]
 })

@@ -1,18 +1,7 @@
-<p>
-  profile-management works!
-</p>
 
 <div *ngIf="profiles!=undefined">
   <ul style="list-style-type:none;" *ngFor="let profItem of profiles">
     <app-profile-display [inpprofileItem]="profItem"></app-profile-display>
-  </ul>
-</div>
-
-<div *ngIf="id>0">
-  <ul style="list-style-type:none;">
-    <li>profile ID: {{profileInfo.profileID}}</li>
-    <li>Name: {{profileInfo.Name}}</li>
-    <li>Address: {{profileInfo.Address}}</li>
   </ul>
 </div>
 

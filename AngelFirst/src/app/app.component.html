@@ -1,14 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="width:75%; margin:auto;">
+<div style="width:75%; margin:auto;background-color:white;">
   <div class="headerContentstyle">
     <h1>
       Welcome to the {{appName}}!
     </h1>
     <app-home-navigation></app-home-navigation>
   </div>
-  <div class="bodyContentstyle">
-    <router-outlet></router-outlet>
-  </div>
-
-  <app-app-footer></app-app-footer>
-</div>
+    <div class="footerContentstyle">
+        <div class="bodyContentstyle">
+            <div class="navigatorstyle">
+                <app-sidebar-navigator></app-sidebar-navigator>
+            </div>
+            <div class="routeroutletstyle">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <div class="footerContentstyle">
+            <app-app-footer></app-app-footer>
+        </div>
+    </div>
+    </div>
