@@ -8,7 +8,6 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class SidebarNavigatorComponent implements OnInit {
 
     @Input() inpval: string;
-    //@Output() changevalue = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
