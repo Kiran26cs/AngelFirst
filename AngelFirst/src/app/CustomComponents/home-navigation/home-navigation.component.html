@@ -1,12 +1,13 @@
 <div style="height:10%; font-size:medium;background-color:lightgreen">
-  <nav >
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/home/1" routerLinkActive="active">Home-1-user</a>
-    <a routerLink="/home/2" routerLinkActive="active">Admin Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/profile" routerLinkActive="active">Profile</a>
-    <a routerLink="/employees" routerLinkActive="active">Employees</a>
-    <a routerLink="/customers" routerLinkActive="active">Customers</a>
+  <nav>
+    <a routerLink="/home" routerLinkActive="active" (click)="clickhandler('Home')">Home</a>
+    <a routerLink="/home/1" routerLinkActive="active" (click)="clickhandler('Home-1-user')">Home-1-user</a>
+    <a routerLink="/home/2" routerLinkActive="active" (click)="clickhandler('Admin Home')">Admin Home</a>
+    <a routerLink="/about" routerLinkActive="active" (click)="clickhandler('About')">About</a>
+    <a routerLink="/profile" routerLinkActive="active" (click)="clickhandler('Profile')">Profile</a>
+    <a routerLink="/employees" routerLinkActive="active" (click)="clickhandler('Employees')">Employees</a>
+    <a routerLink="/customers" routerLinkActive="active" (click)="clickhandler('Customers')">Customers</a>
   </nav>
+    <!--<app-sidebar-navigator [inpval]="displayVal"></app-sidebar-navigator>-->
 </div>
  

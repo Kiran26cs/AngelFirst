@@ -4,12 +4,12 @@
     <h1>
       Welcome to the {{appName}}!
     </h1>
-    <app-home-navigation></app-home-navigation>
+    <app-home-navigation (emitclickedoption)="getClickedOption($event)"></app-home-navigation>
   </div>
     <div class="footerContentstyle">
         <div class="bodyContentstyle">
             <div class="navigatorstyle">
-                <app-sidebar-navigator></app-sidebar-navigator>
+                <app-sidebar-navigator [inpval]="optionClicked"></app-sidebar-navigator>
             </div>
             <div class="routeroutletstyle">
                 <router-outlet></router-outlet>

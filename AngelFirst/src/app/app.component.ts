@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    private optionClicked: string;
     appName = 'Angular application'
+
+    getClickedOption($event) {
+        this.optionClicked = $event;
+    }
 }
