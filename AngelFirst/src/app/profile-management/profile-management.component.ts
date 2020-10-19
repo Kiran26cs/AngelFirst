@@ -15,7 +15,6 @@ export class ProfileManagementComponent implements OnInit {
 
   ngOnInit() {
     let id = +this.route.snapshot.paramMap.get('id');
-    debugger;
     if (id > 0) {
       this.getProfileByID(id)
     } else {

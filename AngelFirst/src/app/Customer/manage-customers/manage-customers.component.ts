@@ -37,8 +37,7 @@ export class ManageCustomersComponent implements OnInit {
   }
 
   onCustomerFormSubmit(formSubmitDetail: FormGroup) {
-    this.submitted = true
-    debugger;
+      this.submitted = true;
     if (formSubmitDetail.invalid) { return false }
 
     this.customerDetail = new CustomerDetail()

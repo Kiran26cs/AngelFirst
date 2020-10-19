@@ -14,7 +14,6 @@ export class HomeNavigationComponent implements OnInit {
   }
 
   displaychangevalue(val) {
-      debugger;
       console.log(val);
   }
   clickhandler(val) {
