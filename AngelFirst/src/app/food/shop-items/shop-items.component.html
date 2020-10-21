@@ -1,1 +1,5 @@
-Shop will be soon opened for display
+<div>
+    <div style="float:right"><app-search-food (changevalue)="fetchsearchvalue($event)"></app-search-food></div>
+    Shop will be soon opened for display
+</div><br/>
+<app-list-food [searchvalue]="searchValue"></app-list-food>

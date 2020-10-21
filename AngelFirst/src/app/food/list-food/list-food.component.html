@@ -1,0 +1,6 @@
+
+<app-food-item *ngFor="let foodItem of listOfSearchedFood" [fooditem]="foodItem"></app-food-item>
+
+<div *ngIf="listdontexists">
+    No search results found. please try some other menus
+</div>
