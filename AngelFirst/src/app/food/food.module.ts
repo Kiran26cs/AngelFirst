@@ -5,13 +5,14 @@ import { ShopItemsComponent } from './shop-items/shop-items.component';
 import { SearchFoodComponent } from './search-food/search-food.component';
 import { FoodRouterModule } from './food-router/food-router.module';
 import { ListFoodComponent } from './list-food/list-food.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [
         FormsModule ,
     CommonModule,
-    FoodRouterModule
+        FoodRouterModule,
+        ReactiveFormsModule
   ],
   declarations: [FoodItemComponent, ShopItemsComponent, SearchFoodComponent, ListFoodComponent]
 })

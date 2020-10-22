@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectorRef} from '@angular/core';
 import {food} from '../../Model/food/food';
+import {  Validator, FormArray, FormControl, FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-list-food',
@@ -10,18 +11,24 @@ export class ListFoodComponent implements OnInit {
     private listOfFood: Array<food>
     private listOfSearchedFood: Array<food>
     private listdontexists: boolean
+    private foodFormGroup: FormGroup
+    private newFoodForm: food
+    private submitted: boolean = false;
 
     @Input() searchvalue: string;
     private cd: ChangeDetectorRef;
-    constructor(cd: ChangeDetectorRef) {
+    constructor(cd: ChangeDetectorRef, public foodFormBuilder: FormBuilder) {
         this.cd = cd;
     }
 
   ngOnInit() {
       this.displayDetails();
+      this.createFoodForm();
   }
   ngDoCheck() {
-      this.displayDetails();
+      if (!this.submitted) {
+          this.displayDetails();
+      }
   }
   displayDetails() {
       if (this.searchvalue === undefined || this.searchvalue === null) {
@@ -30,7 +37,6 @@ export class ListFoodComponent implements OnInit {
       } else {
           this.getListBySearchText();
       }
-      debugger;
       if (this.listOfSearchedFood === null || this.listOfSearchedFood === undefined || this.listOfSearchedFood.length == 0) {
           this.listdontexists = true;
       } else {
@@ -61,4 +67,34 @@ export class ListFoodComponent implements OnInit {
 
   }
 
+  trackbyIndex(index: number): number {
+      return index;
+  }
+
+  createFoodForm() {
+      this.newFoodForm = new food();
+      this.newFoodForm.name = '';
+      this.newFoodForm.description = '';
+      this.newFoodForm.unitCost = 0;
+
+      this.foodFormGroup = this.foodFormBuilder.group(
+          {
+              'name': [this.newFoodForm.name, Validators.required],
+              'description': [this.newFoodForm.description, Validators.required],
+              'unitCost': [this.newFoodForm.unitCost, Validators.required],
+          }
+      );
+  }
+
+
+  addfoodItem(foodGrp: FormGroup) {
+      this.submitted = true;
+      this.newFoodForm.name = foodGrp.controls['name'].value;
+      this.newFoodForm.description = foodGrp.controls['description'].value;
+      this.newFoodForm.unitCost = foodGrp.controls['unitCost'].value;
+
+      //this.getListBySearchAll();
+      this.newFoodForm.id = this.listOfFood.length;
+      this.listOfFood.push(this.newFoodForm);
+  }
 }

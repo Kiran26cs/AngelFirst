@@ -1,6 +1,20 @@
 
-<app-food-item *ngFor="let foodItem of listOfSearchedFood" [fooditem]="foodItem"></app-food-item>
+<form class="row" [formGroup]="foodFormGroup">
+    <label *ngIf="foodFormGroup.controls['name'].hasError('required') && (foodFormGroup.controls['name'].touched || submitted)">Given name is mandatory</label>
+    <input name="name" formControlName="name" class="form-control" id="name" placeholder="Enter the name" />
+
+    <label *ngIf="foodFormGroup.controls['description'].hasError('required') && (foodFormGroup.controls['description'].touched || submitted)">Surname is mandatory</label>
+    <input name="description" formControlName="description" class="form-control" id="description" placeholder="Enter the description" />
+
+    <label *ngIf="foodFormGroup.controls['unitCost'].hasError('required') && (foodFormGroup.controls['unitCost'].touched || submitted)">Email address is mandatory</label>
+    <input name="unitCost" formControlName="unitCost" class="form-control" id="unitCost" placeholder="Enter the unit cost" />
+
+    <button type="submit" (click)="addfoodItem(foodFormGroup)">Save</button>
+</form>
+
+<app-food-item *ngFor="let foodItem of listOfSearchedFood; trackBy:trackbyIndex" [fooditem]="foodItem"></app-food-item>
 
 <div *ngIf="listdontexists">
     No search results found. please try some other menus
 </div>
+
